@@ -1,0 +1,24 @@
+{
+  "name": "getir_case",
+  "version": "1.0.0",
+  "description": "getir-case-study - RestAPI",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --detectOpenHandles --coverage",
+    "start": "node app"
+  },
+  "author": "Mustafa KAHRAMAN",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.21"
+  },
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
+  }
+}
