@@ -5,8 +5,9 @@ const mongo = require('../models/index');
 beforeAll(() => { // beforeEach
     // mongo.connect();
 });
-afterAll(done => { // afterEach
-    mongo.disconnect(done);
+afterAll(async (done) => { // afterEach
+    await app.server.close();
+    await mongo.disconnect(done);
 });
 
 describe('Faulty Test', () => {
